@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { UserTypeEnum } from '../../../../enums/Entity/user-type.enum';
+import { UserTypeEnum } from '../../../../enums/entity/user-type.enum';
 import { ProfileDto } from '../../shared/profile.dto';
 
 export class CreateUserDto {

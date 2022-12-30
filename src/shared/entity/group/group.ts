@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, JoinTable, ManyToOne, OneToMany, OneToOne } from 'typeorm';
-import { ActivityTypeEnum } from '../../../enums/Entity/activity-type.enum';
+import { ActivityTypeEnum } from '../../../enums/entity/activity-type.enum';
 import { AppEntity } from '../abstract/app-entity';
 import { Collaborator } from '../collaborator/collaborator';
 import { ItemOffer } from '../item-offer/item-offer';

@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToOne } from 'typeorm';
-import { ActivityTypeEnum } from '../../../enums/Entity/activity-type.enum';
+import { ActivityTypeEnum } from '../../../enums/entity/activity-type.enum';
 import { Address } from '../address/address';
 import { Media } from '../media/media';
 import { AppTitleEntity } from '../abstract/app-title-entity';

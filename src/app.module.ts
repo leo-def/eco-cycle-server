@@ -10,7 +10,7 @@ import { ApiModule } from './api/api.module';
 import { JwtAuthGuard } from './api/guards/jwt-auth/jwt-auth.guard';
 import { entities } from './shared/entity'
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { EnvVarsEnum } from './enums/EnvVars.enum';
+import { EnvVarsEnum } from './enums/env-vars.enum';
 
 @Module({
   imports: [

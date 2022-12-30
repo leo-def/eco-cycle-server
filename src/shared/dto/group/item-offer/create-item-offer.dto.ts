@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { ItemOfferTypeEnum } from '../../../../enums/Entity/item-offer-type.enum';
+import { ItemOfferTypeEnum } from '../../../../enums/entity/item-offer-type.enum';
 import { ProductItemDto } from '../../shared/product-item.dto';
 
 export class CreateItemOfferDto {

@@ -1,4 +1,4 @@
-import { OrderEnum } from '../../../enums/Fetch/order.enum';
+import { OrderEnum } from '../../../enums/fetch/order.enum';
 
 export interface FetchOrder {
 

@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToMany } from 'typeorm';
-import { VehicleTypeEnum } from '../../../enums/Entity/vehicle-type.enum';
+import { VehicleTypeEnum } from '../../../enums/entity/vehicle-type.enum';
 import { Media } from '../media/media';
 import { AppTitleEntity } from '../abstract/app-title-entity';
 import { Group } from '../group/group';

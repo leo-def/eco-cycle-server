@@ -1,5 +1,5 @@
 import { Column, Entity } from 'typeorm';
-import { PixFinancialReceiptDataKeyTypeEnum } from '../../../../enums/Entity/pix-financial-receipt-data-key-type.enum';
+import { PixFinancialReceiptDataKeyTypeEnum } from '../../../../enums/entity/pix-financial-receipt-data-key-type.enum';
 import { FinancialReceiptData } from '../financial-receipt-data';
 
 @Entity()

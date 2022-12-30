@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, OneToOne } from 'typeorm';
-import { UserTypeEnum } from '../../../enums/Entity/user-type.enum';
+import { UserTypeEnum } from '../../../enums/entity/user-type.enum';
 import { AppEntity } from '../abstract/app-entity';
 import { Profile } from '../profile/profile';
 

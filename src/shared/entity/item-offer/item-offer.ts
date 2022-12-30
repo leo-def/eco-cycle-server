@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToOne } from 'typeorm';
-import { ItemOfferTypeEnum } from '../../../enums/Entity/item-offer-type.enum';
+import { ItemOfferTypeEnum } from '../../../enums/entity/item-offer-type.enum';
 import { AppEntity } from '../abstract/app-entity';
 import { Group } from '../group/group';
 import { Place } from '../place/place';

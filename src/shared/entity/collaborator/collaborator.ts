@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
-import { CollaboratorRoleEnum } from '../../../enums/Entity/collaborator-role.enum';
+import { CollaboratorRoleEnum } from '../../../enums/entity/collaborator-role.enum';
 import { AppTitleEntity } from '../abstract/app-title-entity';
 import { User } from '../user/user';
 import { Group } from '../group/group';
