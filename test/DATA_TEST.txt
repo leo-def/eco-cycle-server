@@ -1,0 +1,250 @@
+
+1 - Create main admin user
+    // "id": admin
+    // Main Admin
+    {
+    "username": "admin",
+    "password": "admin1234",
+    "type": "admin",
+    "profile": {
+        "name": "Main Admin"
+    }
+    }
+
+2- Create groups owners and groups
+    // "id": assis-owner
+    // Luis Francisco de Assis
+    //   Fabrica de pregos Assis
+    {
+    "username": "luis-assis",
+    "password": "luis1234",
+    "type": "client",
+    "profile": {
+        "name": "Luis Francisco de Assis"
+    }
+    }
+
+    // "id": assis
+    // Fabrica de pregos Assis
+    //   Fornecedor de ferro
+    {
+    "type": "supply",
+    "profile": {
+        "name": "Fabrica de pregos Assis"
+    },
+    "owner": {
+        "id": "{assis-owner}" // 3
+    }
+    }
+
+
+    // "id": soares-owner
+    // Joao Francisco Soares
+    //   Reciclagem Soares
+    {
+    "username": "joao-soares",
+    "password": "joao1234",
+    "type": "client",
+    "profile": {
+        "name": "Joao Francisco Soares"
+    }
+    }
+
+    // "id": soares
+    // Reciclagem Soares
+    //   Empresa de reciclagem
+    {
+    "type": "collect",
+    "profile": {
+        "name": "Reciclagem Soares"
+    },
+    "owner": {
+        "id": "{soares-owner}" // 4
+    }
+    }
+
+
+
+
+
+    // "id": moreira-owner
+    // Antonio Moreira
+    //   Plasticos Moreira
+    {
+    "username": "antonio-soares",
+    "password": "antonio1234",
+    "type": "client",
+    "profile": {
+        "name": "Antonio Moreira"
+    }
+    }
+
+    // "id": moreira
+    // Plasticos Moreira
+    //   Empresa de plastico, recicla e tb gera reciclaveis
+    {
+    "type": "both",
+    "profile": {
+        "name": "Plasticos Moreira"
+    },
+    "owner": {
+        "id": "{moreira-owner}" // 5
+    }
+    }
+
+4 - Create products
+    {
+        "title": "Ferro"
+    }
+
+    {
+        "title": "Eletrodoméstico"
+    }
+
+    {
+        "title": "Plastico"
+    }
+
+
+5- Create places by groups
+
+
+    // --
+    //  "group": "assis", "type: "supply" // 3
+    // -- 
+//  "id": "assis-place-1"
+{
+  "title": "Fabrica Natal",
+  "address": {
+    "cep": "59014030",
+    "street": "Rua Fabrício Pedroza",
+    "number": "105",
+    "city": "Natal",
+    "country": "Brazil",
+    "state": "RN",
+    "neighborhood": "Areia Preta",
+    "complement": "",
+  },
+  "media": [],
+  "type": "supply"
+}
+
+
+//  "id": "assis-place-2"
+{
+  "title": "Fabrica Manaus",
+  "address": {
+    "cep": "69023175",
+    "street": "Rua Jandaia",
+    "number": "105",
+    "city": "Manaus",
+    "country": "Brazil",
+    "state": "AM",
+    "neighborhood": "Tarumã-Açu",
+    "complement": "",
+  },
+  "media": [],
+  "type": "supply"
+}
+
+
+//  "id": "assis-place-3"
+{
+  "title": "Fabrica Belém",
+  "address": {
+    "cep": "66630264",
+    "street": "Passagem Perpétuo Socorro",
+    "number": "105",
+    "city": "Belém",
+    "country": "Brazil",
+    "state": "PA",
+    "neighborhood": "Bengui",
+    "complement": "",
+  },
+  "media": [],
+  "type": "supply"
+}
+
+
+ //  "id": "assis-place-4"
+{
+  "title": "Fabrica Propriá",
+  "address": {
+    "cep": "49900971",
+    "street": "Rua Principal",
+    "number": "105",
+    "city": "Propriá",
+    "country": "Brazil",
+    "state": "SE",
+    "neighborhood": "Centro",
+    "complement": "",
+  },
+  "media": [],
+  "type": "supply"
+}
+
+
+
+    // --
+    //  "group": soares, "type: "collect" // 4
+    // -- 
+//  "id": "soares-place-1"
+{
+  "title": "Centro de Reciclagem Carpina",
+  "address": {
+    "cep": "55816320",
+    "street": "Rua Humberto de Campos",
+    "number": "105",
+    "city": "Carpina",
+    "country": "Brazil",
+    "state": "PE",
+    "neighborhood": "Santo Antônio",
+    "complement": "",
+  },
+  "media": [],
+  "type": "collect"
+}
+
+
+ //  "id": "soares-place-2"
+{
+  "title": "Centro de Reciclagem Teresina",
+  "address": {
+    "cep": "64039528",
+    "street": "Quadra F4",
+    "number": "706",
+    "city": "Teresina",
+    "country": "Brazil",
+    "state": "PI",
+    "neighborhood": "Esplanada",
+    "complement": "",
+  },
+  "media": [],
+  "type": "collect"
+}
+
+
+//  "id": "soares-place-3"
+{
+  "title": "Centro de Reciclagem Cachoeiro de Itapemirim",
+  "address": {
+    "cep": "29306876",
+    "street": "Rua Luiz Gonzaga de Oliveira",
+    "number": "12",
+    "city": "Cachoeiro de Itapemirim",
+    "country": "Brazil",
+    "state": "ES",
+    "neighborhood": "São Luiz Gonzaga",
+    "complement": "N 5",
+  },
+  "media": [],
+  "type": "collect"
+}
+
+    
+
+6- Create Vehicles by groups
+
+6- Create Collaborators by groups
+
+7- Link frontend with backend
