@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { AxiosResponse } from 'axios';
 import { map } from 'rxjs';
-import { CepService } from 'src/business/external/cep/cep.service';
-import { AddressResponse } from 'src/business/external/cep/shared/address-response';
-import { Address } from 'src/shared/entity/address/address';
+import { CepService } from '../../../business/external/cep/cep.service';
+import { AddressResponse } from '../../../business/external/cep/shared/address-response';
+import { Address } from '../../../shared/entity/address/address';
 
 @Injectable()
 export class AddressService {

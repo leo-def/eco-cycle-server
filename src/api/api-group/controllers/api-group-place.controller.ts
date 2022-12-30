@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Res, Put } from '@nestjs/common';
 import { Response } from 'express';
-import { PlaceService } from 'src/business/group/place/place.service';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
-import { CreatePlaceDto } from 'src/shared/dto/group/place/create-place.dto';
-import { UpdatePlaceDto } from 'src/shared/dto/group/place/update-place.dto';
+import { PlaceService } from '../../../business/group/place/place.service';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
+import { CreatePlaceDto } from '../../../shared/dto/group/place/create-place.dto';
+import { UpdatePlaceDto } from '../../../shared/dto/group/place/update-place.dto';
 import { GroupController } from '../abstracts/group.controller';
 
 @Controller('place')

@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
-import { MeasurementUnitService } from 'src/business/admin/measurement-unit/measurement-unit.service';
-import { CreateMeasurementUnitDto } from 'src/shared/dto/admin/measurement-unit/create-measurement-unit.dto';
-import { UpdateMeasurementUnitDto } from 'src/shared/dto/admin/measurement-unit/update-measurement-unit.dto';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
+import { MeasurementUnitService } from '../../../business/admin/measurement-unit/measurement-unit.service';
+import { CreateMeasurementUnitDto } from '../../../shared/dto/admin/measurement-unit/create-measurement-unit.dto';
+import { UpdateMeasurementUnitDto } from '../../../shared/dto/admin/measurement-unit/update-measurement-unit.dto';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
 
 @Controller('measurement-unit')
 export class ApiAdminMeasurementUnitController {

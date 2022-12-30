@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { ClientService } from 'src/business/client/client.service';
+import { ClientService } from '../../../business/client/client.service';
 
 @Controller()
 export class ApiClientController {

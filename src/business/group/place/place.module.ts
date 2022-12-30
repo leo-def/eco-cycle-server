@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Place } from 'src/shared/entity/place/place';
+import { Place } from '../../../shared/entity/place/place';
 import { GroupModule } from '../group.module';
 import { PlaceService } from './place.service';
 

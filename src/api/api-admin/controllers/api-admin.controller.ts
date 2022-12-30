@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { AdminService } from 'src/business/admin/admin.service';
+import { AdminService } from '../../../business/admin/admin.service';
 
 @Controller()
 export class ApiAdminController {

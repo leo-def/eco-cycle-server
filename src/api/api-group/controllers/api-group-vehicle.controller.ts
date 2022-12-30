@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Res, Put } from '@nestjs/common';
 import { Response } from 'express';
-import { VehicleService } from 'src/business/group/vehicle/vehicle.service';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
-import { CreateVehicleDto } from 'src/shared/dto/group/vehicle/create-vehicle.dto';
-import { UpdateVehicleDto } from 'src/shared/dto/group/vehicle/update-vehicle.dto';
+import { VehicleService } from '../../../business/group/vehicle/vehicle.service';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
+import { CreateVehicleDto } from '../../../shared/dto/group/vehicle/create-vehicle.dto';
+import { UpdateVehicleDto } from '../../../shared/dto/group/vehicle/update-vehicle.dto';
 import { GroupController } from '../abstracts/group.controller';
 
 @Controller('vehicle')

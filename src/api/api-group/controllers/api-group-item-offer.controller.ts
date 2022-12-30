@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Res, Put } from '@nestjs/common';
 import { Response } from 'express';
-import { ItemOfferService } from 'src/business/group/item-offer/item-offer.service';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
-import { CreateItemOfferDto } from 'src/shared/dto/group/item-offer/create-item-offer.dto';
-import { UpdateItemOfferDto } from 'src/shared/dto/group/item-offer/update-item-offer.dto';
+import { ItemOfferService } from '../../../business/group/item-offer/item-offer.service';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
+import { CreateItemOfferDto } from '../../../shared/dto/group/item-offer/create-item-offer.dto';
+import { UpdateItemOfferDto } from '../../../shared/dto/group/item-offer/update-item-offer.dto';
 import { GroupController } from '../abstracts/group.controller';
 
 @Controller('item-offer')

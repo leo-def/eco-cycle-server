@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Vehicle } from 'src/shared/entity/vehicle/vehicle';
+import { Vehicle } from '../../../shared/entity/vehicle/vehicle';
 import { GroupModule } from '../group.module';
 import { VehicleService } from './vehicle.service';
 

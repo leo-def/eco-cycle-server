@@ -1,7 +1,7 @@
-import { ApiProperty } from "@nestjs/swagger";
-import { AppEntityDto } from "./app-entity.dto";
-import { MediaDto } from "./media.dto";
-import { ValueDto } from "./value.dto";
+import { ApiProperty } from '@nestjs/swagger';
+import { AppEntityDto } from './app-entity.dto';
+import { MediaDto } from './media.dto';
+import { ValueDto } from './value.dto';
 
 export class ProductItemDto extends AppEntityDto {
 

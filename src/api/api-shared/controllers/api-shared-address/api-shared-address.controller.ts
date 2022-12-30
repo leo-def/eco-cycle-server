@@ -1,5 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { AddressService } from 'src/business/shared/address/address.service';
+import { AddressService } from '../../../../business/shared/address/address.service';
 
 @Controller('address')
 export class ApiSharedAddressController {

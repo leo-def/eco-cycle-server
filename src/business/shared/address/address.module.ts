@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { CepModule } from 'src/business/external/cep/cep.module';
+import { CepModule } from '../../../business/external/cep/cep.module';
 import { AddressService } from './address.service';
 
 @Module({

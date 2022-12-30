@@ -1,5 +1,5 @@
-import { ApiProperty } from "@nestjs/swagger";
-import { VehicleTypeEnum } from "src/enums/Entity/vehicle-type.enum";
+import { ApiProperty } from '@nestjs/swagger';
+import { VehicleTypeEnum } from '../../../../enums/Entity/vehicle-type.enum';
 
 export class CreateVehicleDto {
 

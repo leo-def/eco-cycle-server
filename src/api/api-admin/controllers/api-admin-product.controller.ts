@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
-import { ProductService } from 'src/business/admin/product/product.service';
-import { CreateProductDto } from 'src/shared/dto/admin/product/create-product.dto';
-import { UpdateProductDto } from 'src/shared/dto/admin/product/update-product.dto';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
+import { ProductService } from '../../../business/admin/product/product.service';
+import { CreateProductDto } from '../../../shared/dto/admin/product/create-product.dto';
+import { UpdateProductDto } from '../../../shared/dto/admin/product/update-product.dto';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
 
 @Controller('product')
 export class ApiAdminProductController {

@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
-import { GroupService } from 'src/business/admin/group/group.service';
-import { CreateGroupDto } from 'src/shared/dto/admin/group/create-group.dto';
-import { UpdateGroupDto } from 'src/shared/dto/admin/group/update-group.dto';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
+import { GroupService } from '../../../business/admin/group/group.service';
+import { CreateGroupDto } from '../../../shared/dto/admin/group/create-group.dto';
+import { UpdateGroupDto } from '../../../shared/dto/admin/group/update-group.dto';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
 
 @Controller('group')
 export class ApiAdminGroupController {

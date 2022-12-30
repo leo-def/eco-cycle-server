@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
-import { Group } from 'src/shared/entity/group/group';
+import { FetchParams } from '../../shared/dto/fetch/fetch-params';
+import { Group } from '../../shared/entity/group/group';
 import { Repository } from 'typeorm';
 import { CrudService } from '../abstracts/crud-service';
 import { GroupService } from './group.service';

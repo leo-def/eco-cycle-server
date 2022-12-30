@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
-import { PhysicalQuantityService } from 'src/business/admin/physical-quantity/physical-quantity.service';
-import { CreatePhysicalQuantityDto } from 'src/shared/dto/admin/physical-quantity/create-physical-quantity.dto';
-import { UpdatePhysicalQuantityDto } from 'src/shared/dto/admin/physical-quantity/update-physical-quantity.dto';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
+import { PhysicalQuantityService } from '../../../business/admin/physical-quantity/physical-quantity.service';
+import { CreatePhysicalQuantityDto } from '../../../shared/dto/admin/physical-quantity/create-physical-quantity.dto';
+import { UpdatePhysicalQuantityDto } from '../../../shared/dto/admin/physical-quantity/update-physical-quantity.dto';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
 
 @Controller('physical-quantity')
 export class ApiAdminPhysicalQuantityController {

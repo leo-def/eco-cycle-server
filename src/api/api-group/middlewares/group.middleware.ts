@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import { GroupService } from 'src/business/group/group.service';
+import { GroupService } from '../../../business/group/group.service';
 
 @Injectable()
 export class GroupMiddleware implements NestMiddleware {

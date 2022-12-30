@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
-import { UserService } from 'src/business/admin/user/user.service';
-import { CreateUserDto } from 'src/shared/dto/admin/user/create-user.dto';
-import { UpdateUserDto } from 'src/shared/dto/admin/user/update-user.dto';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
+import { UserService } from '../../../business/admin/user/user.service';
+import { CreateUserDto } from '../../../shared/dto/admin/user/create-user.dto';
+import { UpdateUserDto } from '../../../shared/dto/admin/user/update-user.dto';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
 
 @Controller('user')
 export class ApiAdminUserController {

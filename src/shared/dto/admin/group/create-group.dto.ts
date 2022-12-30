@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { ActivityTypeEnum } from 'src/enums/Entity/activity-type.enum';
+import { ActivityTypeEnum } from '../../../../enums/Entity/activity-type.enum';
 import { ProfileDto } from '../../shared/profile.dto';
 import { UserDto } from '../../shared/user.dto';
 

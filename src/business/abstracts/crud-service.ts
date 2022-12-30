@@ -1,6 +1,6 @@
-import { FetchParams } from "src/shared/dto/fetch/fetch-params";
-import { resolveFetchParams } from "src/utils/fetch";
-import { Repository } from "typeorm";
+import { FetchParams } from '../../shared/dto/fetch/fetch-params';
+import { resolveFetchParams } from '../../utils/fetch';
+import { Repository } from 'typeorm';
 
 export abstract class CrudService<T, C, U> {
 

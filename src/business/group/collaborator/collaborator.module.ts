@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Collaborator } from 'src/shared/entity/collaborator/collaborator';
+import { Collaborator } from '../../../shared/entity/collaborator/collaborator';
 import { GroupModule } from '../group.module';
 import { CollaboratorService } from './collaborator.service';
 

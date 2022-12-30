@@ -1,4 +1,4 @@
-import { FetchParams } from "src/shared/dto/fetch/fetch-params";
+import { FetchParams } from '../shared/dto/fetch/fetch-params';
 
 export const resolveFetchParams = (params: FetchParams, findParams?: any) => {
   findParams = findParams || {} as any

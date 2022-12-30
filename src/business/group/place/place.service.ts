@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CreatePlaceDto } from 'src/shared/dto/group/place/create-place.dto';
-import { UpdatePlaceDto } from 'src/shared/dto/group/place/update-place.dto';
-import { Place } from 'src/shared/entity/place/place';
+import { CreatePlaceDto } from '../../../shared/dto/group/place/create-place.dto';
+import { UpdatePlaceDto } from '../../../shared/dto/group/place/update-place.dto';
+import { Place } from '../../../shared/entity/place/place';
 import { GroupService } from '../group.service';
 import { GroupChildService } from '../group-child.service';
 

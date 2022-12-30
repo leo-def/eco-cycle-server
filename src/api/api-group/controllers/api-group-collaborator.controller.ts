@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Res, Put } from '@nestjs/common';
 import { Response } from 'express';
-import { CollaboratorService } from 'src/business/group/collaborator/collaborator.service';
-import { FetchParams } from 'src/shared/dto/fetch/fetch-params';
-import { CreateCollaboratorDto } from 'src/shared/dto/group/collaborator/create-collaborator.dto';
-import { UpdateCollaboratorDto } from 'src/shared/dto/group/collaborator/update-collaborator.dto';
+import { CollaboratorService } from '../../../business/group/collaborator/collaborator.service';
+import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
+import { CreateCollaboratorDto } from '../../../shared/dto/group/collaborator/create-collaborator.dto';
+import { UpdateCollaboratorDto } from '../../../shared/dto/group/collaborator/update-collaborator.dto';
 import { GroupController } from '../abstracts/group.controller';
 
 @Controller('collaborator')

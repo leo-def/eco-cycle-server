@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CreateItemOfferDto } from 'src/shared/dto/group/item-offer/create-item-offer.dto';
-import { UpdateItemOfferDto } from 'src/shared/dto/group/item-offer/update-item-offer.dto';
-import { ItemOffer } from 'src/shared/entity/item-offer/item-offer';
+import { CreateItemOfferDto } from '../../../shared/dto/group/item-offer/create-item-offer.dto';
+import { UpdateItemOfferDto } from '../../../shared/dto/group/item-offer/update-item-offer.dto';
+import { ItemOffer } from '../../../shared/entity/item-offer/item-offer';
 import { GroupService } from '../group.service';
 import { GroupChildService } from '../group-child.service';
 

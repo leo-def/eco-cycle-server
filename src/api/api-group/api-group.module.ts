@@ -1,9 +1,9 @@
 import { MiddlewareConsumer, Module } from '@nestjs/common';
-import { CollaboratorModule } from 'src/business/group/collaborator/collaborator.module';
-import { GroupModule } from 'src/business/group/group.module';
-import { ItemOfferModule } from 'src/business/group/item-offer/item-offer.module';
-import { PlaceModule } from 'src/business/group/place/place.module';
-import { VehicleModule } from 'src/business/group/vehicle/vehicle.module';
+import { CollaboratorModule } from '../../business/group/collaborator/collaborator.module';
+import { GroupModule } from '../../business/group/group.module';
+import { ItemOfferModule } from '../../business/group/item-offer/item-offer.module';
+import { PlaceModule } from '../../business/group/place/place.module';
+import { VehicleModule } from '../../business/group/vehicle/vehicle.module';
 import { ApiGroupCollaboratorController } from './controllers/api-group-collaborator.controller';
 import { ApiGroupItemOfferController } from './controllers/api-group-item-offer.controller';
 import { ApiGroupPlaceController } from './controllers/api-group-place.controller';

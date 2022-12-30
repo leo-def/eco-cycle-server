@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateGroupDto } from 'src/shared/dto/admin/group/create-group.dto';
-import { UpdateGroupDto } from 'src/shared/dto/admin/group/update-group.dto';
-import { Collaborator } from 'src/shared/entity/collaborator/collaborator';
-import { Group } from 'src/shared/entity/group/group';
-import { Place } from 'src/shared/entity/place/place';
-import { Vehicle } from 'src/shared/entity/vehicle/vehicle';
+import { CreateGroupDto } from '../../shared/dto/admin/group/create-group.dto';
+import { UpdateGroupDto } from '../../shared/dto/admin/group/update-group.dto';
+import { Collaborator } from '../../shared/entity/collaborator/collaborator';
+import { Group } from '../../shared/entity/group/group';
+import { Place } from '../../shared/entity/place/place';
+import { Vehicle } from '../../shared/entity/vehicle/vehicle';
 import { Repository } from 'typeorm';
 import { CrudService } from '../abstracts/crud-service';
 

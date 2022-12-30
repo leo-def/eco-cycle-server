@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ItemOffer } from 'src/shared/entity/item-offer/item-offer';
+import { ItemOffer } from '../../../shared/entity/item-offer/item-offer';
 import { ClientModule } from '../client.module';
 import { ItemOfferService } from './item-offer.service';
 
