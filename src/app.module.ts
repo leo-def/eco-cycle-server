@@ -20,7 +20,10 @@ import { EnvVarsEnum } from './enums/env-vars.enum';
     ApiSharedModule,
     ApiGroupModule,
     ApiPublicModule,
-    ConfigModule.forRoot({ isGlobal: true }),
+    ConfigModule.forRoot({
+      envFilePath: process.env.NODE_ENV ? `${process.cwd()}/.env.${process.env.NODE_ENV}` : undefined,
+      isGlobal: true
+    }),
     RouterModule.register([
       {
         path: 'api',
