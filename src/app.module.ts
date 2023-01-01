@@ -57,13 +57,13 @@ import { EnvVarsEnum } from './enums/env-vars.enum';
       imports: [],
       useFactory: (config: ConfigService) => {
         return ({
-        type: 'sqlite' as 'sqlite',
+        type: config.get(EnvVarsEnum.DATABASE_TYPE) as string,
         database: config.get(EnvVarsEnum.DATABASE_URL) as string,
         // dropSchema: true,
         entities: entities,
         synchronize: true,
         logging: false,
-      })
+      }) as TypeOrmModuleOptions
     },
       inject: [ConfigService],
     })
