@@ -9,10 +9,10 @@ export class AppEntity {
   @PrimaryGeneratedColumn()
   id?: number;
 
-  @CreateDateColumn({ type: "datetime", default: () => "datetime('now')" })
+  @CreateDateColumn({ type: "date", default: () => "date('now')" })
   createAt?: Date;
 
-  @UpdateDateColumn({ type: "datetime", default: () => "datetime('now')", onUpdate: "datetime('now')" })
+  @UpdateDateColumn({ type: "date", default: () => "date('now')", onUpdate: "date('now')" })
   updateAt?: Date;
 
 }
