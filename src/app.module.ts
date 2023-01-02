@@ -11,7 +11,7 @@ import { JwtAuthGuard } from './api/guards/jwt-auth/jwt-auth.guard';
 import { entities } from './shared/entity'
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { EnvVarsEnum } from './enums/env-vars.enum';
-import { configuration } from './config/configuration';
+import { configuration, EnvVarsDatabaseConfig } from './config/configuration';
 
 @Module({
   imports: [
@@ -59,8 +59,7 @@ import { configuration } from './config/configuration';
       imports: [],
       useFactory: (config: ConfigService) => {
         return ({
-        type: config.get(EnvVarsEnum.DATABASE_TYPE) as string,
-        database: config.get(EnvVarsEnum.DATABASE_URL) as string,
+          ...config.get<EnvVarsDatabaseConfig>(EnvVarsEnum.DATABASE_CONFIG),
         // dropSchema: true,
         entities: entities,
         synchronize: true,
