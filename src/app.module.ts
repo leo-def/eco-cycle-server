@@ -11,6 +11,7 @@ import { JwtAuthGuard } from './api/guards/jwt-auth/jwt-auth.guard';
 import { entities } from './shared/entity'
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { EnvVarsEnum } from './enums/env-vars.enum';
+import { configuration } from './config/configuration';
 
 @Module({
   imports: [
@@ -21,8 +22,9 @@ import { EnvVarsEnum } from './enums/env-vars.enum';
     ApiGroupModule,
     ApiPublicModule,
     ConfigModule.forRoot({
-      envFilePath: process.env.NODE_ENV ? `${process.cwd()}/.env.${process.env.NODE_ENV}` : undefined,
-      isGlobal: true
+      envFilePath: process.env.NODE_ENV ? `env/${process.env.NODE_ENV.toLowerCase().trim()}.env` : undefined,
+      isGlobal: true,
+      load: [configuration]
     }),
     RouterModule.register([
       {
