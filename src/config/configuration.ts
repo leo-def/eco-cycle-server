@@ -12,7 +12,8 @@ export const configuration = () => ({
     password: process.env.DATABASE_PASSWORD
   } as EnvVarsDatabaseConfig,
   [EnvVarsEnum.DATABASE_DATATIME_TYPE]: process.env.DATABASE_DATATIME_TYPE
-  });
+});
+
 export interface EnvVarsDatabaseConfig {
   type?: string;
   database?: string;

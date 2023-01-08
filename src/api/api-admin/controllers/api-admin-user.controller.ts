@@ -7,37 +7,37 @@ import { FetchParams } from '../../../shared/dto/fetch/fetch-params';
 @Controller('user')
 export class ApiAdminUserController {
 
-  constructor(private readonly service: UserService) { }
+  constructor(private readonly userService: UserService) { }
 
   @Post('search')
   async search(@Body() params: FetchParams) {
-    return this.service.search(params);
+    return this.userService.search(params);
   }
 
   @Post()
   async create(@Body() dto: CreateUserDto) {
-    return this.service.create(dto);
+    return this.userService.create(dto);
   }
 
   @Get()
   async findAll() {
-    return this.service.findAll();
+    return this.userService.findAll();
   }
 
   @Get(':id')
   async findOne(@Param('id') id: string) {
-    return this.service.findOne(id);
+    return this.userService.findOne(id);
   }
 
 
   @Put(':id')
   @Patch(':id')
   async update(@Param('id') id: string, @Body() dto: UpdateUserDto) {
-    return this.service.update(id, dto);
+    return this.userService.update(id, dto);
   }
 
   @Delete(':id')
   async remove(@Param('id') id: string) {
-    return this.service.remove(id);
+    return this.userService.remove(id);
   }
 }
