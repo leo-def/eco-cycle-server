@@ -18,8 +18,11 @@ export class User extends AppEntity {
   salt?: string;
 
 
-  @OneToOne(() => Profile, null, { cascade: true, eager: true })
+  @OneToOne(() => Profile, null, { cascade: true, eager: true, nullable: true })
 	@JoinColumn({ name: "profileId", referencedColumnName: "id"  })
   profile?: Profile;
+  
+  @Column({ nullable: true })
+  profileId?: string;
 
 }

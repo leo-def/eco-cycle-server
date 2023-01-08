@@ -7,10 +7,10 @@ export class Address extends AppEntity {
   @Column()
   cep?: string;
 
-  @Column()
+  @Column({ nullable: true })
   street?: string;
 
-  @Column()
+  @Column({ nullable: true })
   number?: string;
 
   @Column()
@@ -25,7 +25,7 @@ export class Address extends AppEntity {
   @Column()
   neighborhood?: string;
 
-  @Column()
+  @Column({ nullable: true })
   complement?: string;
 
 }
