@@ -10,10 +10,13 @@ export class User extends AppEntity {
   username?: string;
 
   @Column()
+
+  @Column({ nullable: true })
   password?: string;
 
-  @Column()
-  type?: UserTypeEnum;
+  @Column({ nullable: true })
+  salt?: string;
+
 
   @OneToOne(() => Profile, null, { cascade: true, eager: true })
 	@JoinColumn({ name: "profileId", referencedColumnName: "id"  })
