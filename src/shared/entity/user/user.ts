@@ -10,6 +10,7 @@ export class User extends AppEntity {
   username?: string;
 
   @Column()
+  type?: UserTypeEnum;
 
   @Column({ nullable: true })
   password?: string;

@@ -2,21 +2,28 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from '../../../shared/entity/user/user';
 import { Repository } from 'typeorm';
+import { PasswordUtils } from 'src/utils/password-utils';
 
 @Injectable()
 export class UserService {
 
-    constructor(
-        @InjectRepository(User)
-        private repository: Repository<User>,
-    ) { }
+  constructor(
+    @InjectRepository(User)
+    private repository: Repository<User>,
+  ) { }
 
-    async findOne(id: string) {
-        return await this.repository.findOneBy({ id } as any);
-    }
+  async findOne(id: string): Promise<User> {
+    return await this.repository.findOneBy({ id } as any);
+  }
 
-    
-    async findOneByUsername(username: string) {
-        return await this.repository.findOneBy({ username } as any);
-    }
+  async findOneByUsername(username: string): Promise<User> {
+    return await this.repository.findOneBy({ username } as any);
+  }
+
+  async register(register: User): Promise<User> {
+    const { salt, hash } = PasswordUtils.loadPassword(register.password);
+    register.password = hash;
+    register.salt = salt;
+    return await this.repository.save(register);
+  }
 }
