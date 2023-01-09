@@ -26,4 +26,12 @@ export class UserService {
     register.salt = salt;
     return await this.repository.save(register);
   }
+  
+  async updatePassword(user: User, newPassword: string) {
+    const { salt, hash } = PasswordUtils.loadPassword(newPassword, user.salt);
+    user.password = hash;
+    user.salt = salt;
+    return await this.repository.update(user.id, user);
+  }
+
 }
