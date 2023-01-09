@@ -18,6 +18,11 @@ export class User extends AppEntity {
   @Column({ nullable: true })
   salt?: string;
 
+  @Column({ nullable: true })
+  resetPasswordToken?: string;
+
+  @Column({ nullable: true })
+  confirmUserToken?: string;
 
   @OneToOne(() => Profile, null, { cascade: true, eager: true, nullable: true })
 	@JoinColumn({ name: "profileId", referencedColumnName: "id"  })

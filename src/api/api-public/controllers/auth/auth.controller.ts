@@ -38,6 +38,11 @@ export class AuthController {
     return req.user;
   }
 
+  @Post('reset-password')
+  async resetPassword(@Body() dto: ResetPasswordDto) {
+    return await this.authService.resetPassword(dto);
+  }
+
   @Post('update-password')
   async updatePassword(@Body() dto: UpdatePasswordDto) {
     return await this.authService.updatePassword(dto);

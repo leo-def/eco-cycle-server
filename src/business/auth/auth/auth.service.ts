@@ -29,6 +29,12 @@ export class AuthService {
     const payload = { username: user.username, sub: user.id };
     return {
       access_token: this.jwtService.sign(payload),
+  async resetPassword(dto: ResetPasswordDto) {
+    const { username, newPassword, resetPasswordToken } = dto;
+    const user = await this.userService.findOneByUsername(username);
+    if (user && user.password && newPassword && resetPasswordToken && user.resetPasswordToken) {
+      await this.userService.updatePassword(user, newPassword);
+    }
   }
 
   async updatePassword(dto: UpdatePasswordDto) {
